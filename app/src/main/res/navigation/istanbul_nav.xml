@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/istanbul_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.demir.stanbulkartclone.ui.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_passwordFragment"
+            app:destination="@id/passwordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/islemlerFragment"
+        android:name="com.demir.stanbulkartclone.ui.IslemlerFragment"
+        android:label="fragment_islemler"
+        tools:layout="@layout/fragment_islemler" />
+    <fragment
+        android:id="@+id/bulFragment"
+        android:name="com.demir.stanbulkartclone.ui.BulFragment"
+        android:label="fragment_bul"
+        tools:layout="@layout/fragment_bul" />
+    <fragment
+        android:id="@+id/passwordFragment"
+        android:name="com.demir.stanbulkartclone.ui.PasswordFragment"
+        android:label="fragment_kartlarim"
+        tools:layout="@layout/fragment_password" >
+        <action
+            android:id="@+id/action_passwordFragment_to_kartlarimFragment"
+            app:destination="@id/kartlarimFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kartlarimFragment"
+        android:name="com.demir.stanbulkartclone.ui.KartlarimmFragment"
+        android:label="fragment_kartlarimm"
+        tools:layout="@layout/fragment_kartlarimm"/>
+</navigation>

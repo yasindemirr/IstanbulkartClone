@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:id="@+id/bottomApp"
+        app:elevation="0dp"
+        app:contentInsetStart="0dp"
+        android:backgroundTint="@color/bottom_app_backround"
+       android:layout_gravity="bottom">
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:backgroundTint="@android:color/transparent"
+            android:id="@+id/bottomNav"
+            app:itemRippleColor="@null"
+            app:labelVisibilityMode="labeled"
+            app:itemTextColor="@color/bottom_nav_title_color"
+            app:itemIconTint="@color/bottom_nav_icon_color"
+            app:itemIconSize="@dimen/_25sdp"
+            app:menu="@menu/istanbul_menu">
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:id="@+id/fab"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="@dimen/_27sdp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/scannnnn"
+        app:backgroundTint="@color/fab_color"
+        app:fabCustomSize="@dimen/_46sdp"
+        app:maxImageSize="@dimen/_25sdp"
+        app:tint="@color/white"
+        >
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <fragment
+        android:id="@+id/fragmentContainerView"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_50sdp"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/istanbul_nav" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

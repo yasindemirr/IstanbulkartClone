@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+    android:id="@+id/homeFragment"
+    android:icon="@drawable/home"
+    android:title="Anasayfa">
+    </item>
+    <item
+        android:id="@+id/kartlarimFragment"
+        android:icon="@drawable/card"
+        android:title="Kartlarım">
+    </item>
+    <item
+        android:id="@+id/placeHolder"
+        android:title="QR ile öde"
+        >
+    </item>
+    <item
+        android:id="@+id/islemlerFragment"
+        android:icon="@drawable/transfer_arrow"
+        android:title="İşlemler"
+        >
+    </item>
+    <item
+        android:id="@+id/bulFragment"
+        android:icon="@drawable/location"
+        android:title="Bul"
+       >
+    </item>
+
+</menu>

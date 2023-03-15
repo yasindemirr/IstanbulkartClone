@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".ui.KartlarimmFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:layout_marginHorizontal="@dimen/_8sdp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Kartlarım"
+            android:textSize="@dimen/_20ssp"
+            android:layout_gravity="top"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="@color/fab_color">
+        </TextView>
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:orientation="vertical">
+           <ImageView
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:src="@drawable/add_circle">
+
+           </ImageView>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Kart Ekle"
+               android:textSize="15sp"
+               android:layout_gravity="bottom"
+               android:textColor="@color/fab_color">
+           </TextView>
+       </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:text="Benim kartlarım"
+        android:textSize="@dimen/_10ssp"
+        android:layout_gravity="top"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:textStyle="bold"
+        android:textColor="@color/icon_color">
+    </TextView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/kartRec"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_height="0dp"
+        android:nestedScrollingEnabled="false"
+        android:layout_weight="1">
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>
+
+</ScrollView>
